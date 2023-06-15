@@ -1,0 +1,73 @@
+.navbar {
+  /* background-color: #ff6347; */
+  color: #ff6347;
+  /* border: 2px solid black; */
+  margin: 20px;
+  padding: 20px;
+}
+
+.button {
+  background-color: #ff6347;
+  color: #ffffff;
+  /* border: 2px solid black; */
+  margin: 20px;
+  padding: 20px;
+}
+
+/* removing underline form a link */
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
+body {
+  font-family: Tahoma, sans serif;
+}
+
+
+.two_column {
+  float: left;
+  width: 50%;
+  padding: 15px;
+  /* border: 2px solid black; */
+}
+
+.three_column {
+  float: left;
+  width: 32%;
+  padding: 5px;
+  /* border: 2px solid black; */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.image {
+  width: 50%;
+  height: 25%;
+  border-radius: 18%;
+}
+
+.home_3_sec {
+  padding:15px; 
+  width:33%;
+}
+
+.image2 {
+  width: 50%;
+  height: 25%;
+  border-radius: 28%;
+  padding: 20%;
+}
+
+.home_4_sec {
+  color: #676565; 
+  font-weight: bold; 
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
