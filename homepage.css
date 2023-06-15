@@ -15,13 +15,31 @@
 }
 
 /* removing underline form a link */
-a:link { text-decoration: none; }
-a:visited { text-decoration: none; }
-a:hover { text-decoration: none; }
-a:active { text-decoration: none; }
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
 
 body {
-  font-family: Tahoma, sans serif;
+
+  font-family: 'Tahoma, ' sans-serif', ' Roboto', ' Oxygen',
+ 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Arial', 'Helvetica';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: silver;
+  height: 100%;
+  margin: 0;
 }
 
 
@@ -53,8 +71,8 @@ body {
 }
 
 .home_3_sec {
-  padding:15px; 
-  width:33%;
+  padding: 15px;
+  width: 33%;
 }
 
 .image2 {
@@ -65,9 +83,103 @@ body {
 }
 
 .home_4_sec {
-  color: #676565; 
-  font-weight: bold; 
+  color: #676565;
+  font-weight: bold;
   text-align: center;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+
+}
+
+
+span {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.chat {
+  height: 300px;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+::-webkit-input-placeholder {
+  color: .711
+}
+
+input {
+  border: 0;
+  padding: 15px;
+  margin-left: auto;
+  border-radius: 10px;
+}
+
+.messages {
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  height: 90%;
+  width: 100%;
+  background-color: white;
+  padding: 15px;
+  margin: 15px;
+  border-radius: 10px;
+}
+
+#bot {
+  margin-right: auto;
+}
+
+#user {
+  margin-left: auto;
+}
+
+
+.bot {
+  font-family: Consolas, 'Courier New', Menlo, source-code-pro, Monaco,
+    monospace;
+}
+
+.avatar {
+  height: 25px;
+}
+
+.response {
+  display: flex;
+  align-items: center;
+  margin: 1%;
+}
+
+
+/* Mobile */
+
+@media only screen and (max-width: 980px) {
+  .container {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .chat {
+    width: 75vw;
+    margin: 10vw;
+  }
 }
